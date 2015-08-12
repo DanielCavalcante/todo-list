@@ -1,0 +1,49 @@
+<h1>Cadastre-se!</h1>
+<p>
+	Para acessar o Taskv, você precisa criar a sua conta. É muito simples e não vai levar mais que 1 minuto!
+</p>
+
+<% if @user.errors.any? %>
+	<p>
+		Verifique o formulário antes de continuar:
+	</p>
+
+	<ul>
+		<% for message in @user.errors.full_messages %>
+			<li>
+				<%= message %>
+			</li>
+		<% end %>
+	<ul>
+<% end %>
+
+<%= form_for @user, url: '/signup' do |f| %>
+	<p>
+		<%= f.label :name, 'Seu nome' %>
+		<%= f.text_field :name %>
+	</p>
+
+	<p>
+		<%= f.label :email, 'Seu e-mail' %>
+		<%= f.text_field :email %>
+	</p>
+
+	<p>
+		<%= f.label :password, 'Sua senha' %>
+		<%= f.password_field :password %>
+	</p>
+
+	<p>
+		<%= f.label :password_confirmation, 'Confirme sua senha' %>
+		<%= f.password_field :password_confirmation %>
+	</p>
+	<p>
+		<%= f.check_box :tos %>
+		<%= f.label :tos, 'Concordo com os termos de serviço' %>
+	</p>
+
+	<p>
+		<%= f.submit 'Criar minha conta' %>
+	</p>
+
+<% end %>
