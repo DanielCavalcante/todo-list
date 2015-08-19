@@ -1,0 +1,17 @@
+pt-BR:
+    form:
+        error_message: 'Verifique o formulário antes de continuar:'
+
+    labels:
+        user:
+            name: Seu nome
+            email: Seu e-mail
+            password: Sua senha
+            password_confirmation: Confirme sua senha
+            tos: Concordo com os termos de serviço
+
+    helpers:
+        submit:
+            user:
+                create: Criar minha conta
+                update: Atualizar meu perfil

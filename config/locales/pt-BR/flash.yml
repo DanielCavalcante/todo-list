@@ -1,0 +1,5 @@
+pt-BR:
+    flash:
+        signup:
+            create:
+                notice: 'Cadastro realizado com sucesso!'
