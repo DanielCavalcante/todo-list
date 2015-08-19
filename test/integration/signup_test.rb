@@ -6,7 +6,7 @@ class SignupTest < ActionDispatch::IntegrationTest
   	click_link t('menu.signup')
 
     fill_in labels('user.name'), with: 'Daniel Cavalcante'
-  	fill_in labels('user.emaik'), with: 'daniel@gmail.com'
+  	fill_in labels('user.email'), with: 'daniel@gmail.com'
   	fill_in labels('user.password'), with: 'teste'
   	fill_in labels('user.password_confirm'), with: 'teste'
   	check labels('user.tos')

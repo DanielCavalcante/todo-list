@@ -3,15 +3,23 @@ pt-BR:
         error_message: 'Verifique o formulário antes de continuar:'
 
     labels:
-        user:
-            name: Seu nome
+        defaults: &labels_defaults
             email: Seu e-mail
             password: Sua senha
+
+        user:
+            name: Seu nome
+            <<: *labels_defaults
             password_confirmation: Confirme sua senha
             tos: Concordo com os termos de serviço
+
+        login:
+            <<: *labels_defaults
 
     helpers:
         submit:
             user:
                 create: Criar minha conta
                 update: Atualizar meu perfil
+
+            login: acessar minha conta
