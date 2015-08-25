@@ -3,3 +3,9 @@ pt-BR:
         signup:
             create:
                 notice: 'Cadastro realizado com sucesso!'
+
+        login:
+            create:
+                alert: 'Email/senha inválidos'
+            required:
+                alert: 'Você precisa estar logado para acessar está página.'

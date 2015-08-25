@@ -2,3 +2,4 @@ pt-BR:
     menu:
         signup: Cadastre-se
         login: Acesse sua conta
+        logout: Sair

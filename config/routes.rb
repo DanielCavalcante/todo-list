@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
     get '/login' => 'login#new', as: 'login'
     post 'login' => 'login#create'
+    delete '/logout' => 'login#destroy', as: 'logout'
 
     get '/tasks' => 'tasks#index', as: 'tasks'
 end
