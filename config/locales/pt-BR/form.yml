@@ -16,6 +16,9 @@ pt-BR:
         login:
             <<: *labels_defaults
 
+        task:
+            title: Descreva sua tarefa
+
     helpers:
         submit:
             user:

@@ -11,4 +11,5 @@ Rails.application.routes.draw do
     delete '/logout' => 'login#destroy', as: 'logout'
 
     get '/tasks' => 'tasks#index', as: 'tasks'
+    post '/tasks/new' => 'tasks#create', as: 'new_task'
 end

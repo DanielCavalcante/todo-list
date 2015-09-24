@@ -1,0 +1,8 @@
+pending:
+  title: Some pending task
+  user: john
+
+completed:
+  title: MyString
+  completed_at: 2015-09-24 14:38:30
+  user_id: john

@@ -1,2 +1,10 @@
 <%= current_user.name %>
 <%= button_to t('menu.logout'), logout_path, method: 'delete' %>
+
+<%= form_for @task, url: new_task_path do |f| %>
+    <p>
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+        <%= f.submit %>
+    </p>
+<% end %>
