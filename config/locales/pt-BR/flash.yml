@@ -9,3 +9,8 @@ pt-BR:
                 alert: 'Email/senha inválidos'
             required:
                 alert: 'Você precisa estar logado para acessar está página.'
+
+        tasks:
+            create:
+                notice: 'Tarefa adicionada com sucesso!'
+                alert: 'Erro: Verifique a tarefa'

@@ -4,9 +4,6 @@
   <%= t('login.description') %>
 </p>
 
-<%= flash[:notice] %>
-<%= flash[:alert] %>
-
 <%= form_tag login_path do %>
     <p>
         <%= label_tag :email, t('labels.login.email') %>

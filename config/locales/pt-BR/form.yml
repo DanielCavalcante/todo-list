@@ -25,4 +25,7 @@ pt-BR:
                 create: Criar minha conta
                 update: Atualizar meu perfil
 
+            task:
+                create: Adicionar
+
             login: Acessar minha conta
