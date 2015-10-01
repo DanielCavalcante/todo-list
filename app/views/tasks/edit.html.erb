@@ -1,11 +1,9 @@
-<%= form_for @task, url: new_task_path do |f| %>
+<%= render 'form_errors', record: @task %>
+
+<%= form_for @task, url: edit_task_path(@task) do |f| %>
 	<p>
 		<%= f.label :title, t('labels.task.title') %>
 		<%= f.text_field :title %>
 		<%= f.submit %>
 	</p>
 <% end %>
-
-<ul class="tasks">
-	<%= render @tasks %>
-</ul>

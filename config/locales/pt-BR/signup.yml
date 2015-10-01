@@ -1,7 +1,6 @@
 pt-BR:
-    signup:
-        title: Cadastre-se!
-        description: >
-            Para acessar o Taskv, você precisa criar a sua conta.
-            É muito simples e não vai levar mais que 1 minuto!
-        
+  signup:
+    title: Cadastre-se!
+    description: >
+      Para acessar o Taskv, você precisa criar a sua conta.
+      É muito simples e não vai levar mais que 1 minuto!

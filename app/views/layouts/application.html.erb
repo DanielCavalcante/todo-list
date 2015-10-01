@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="<%= I18n.locale %>">
-<head>
-  <title>TodoList</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-    <header>
-        <h1>taskv</h1>
-    </header>
+	<head>
+		<title>TodoList</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+		</head>
+	<body>
+		<header>
+			<h1>taskv</h1>
+		</header>
 
-    <% if logged_in? %>
-        <%= current_user.name %>
-        <%= button_to t('menu.logout'), logout_path, method: 'delete' %>
-    <% end %>
+		<% if logged_in? %>
+			<%= current_user.name %>
+			<%= button_to t('menu.logout'), logout_path, method: 'delete' %>
+		<% end %>
 
-    <% flash.each do |type, message| %>
-        <p class="message message-<%= type %>">
-            <%= message %>
-        </p>
-    <% end %>
+		<% flash.each do |type, message| %>
+			<p class="message message-<%= type %>">
+				<%= message %>
+			</p>
+		<% end %>
 
-<%= yield %>
-
-</body>
+		<%= yield %>
+	</body>
 </html>

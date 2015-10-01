@@ -1,9 +1,12 @@
 pt-BR:
-    activerecord:
-        attributes:
-            user:
-                name: Nome
-                email: E-mail
-                password: Senha
-                password_confirmation: Confirmação de senha
-                tos: Termos de serviço
+  activerecord:
+    attributes:
+      user:
+        name: Nome
+        email: E-mail
+        password: Senha
+        password_confirmation: Confirmação de senha
+        tos: Termos de serviço
+
+			task:
+				title: Título

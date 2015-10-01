@@ -3,19 +3,7 @@
 	<%= t('signup.description') %>
 </p>
 
-<% if @user.errors.any? %>
-	<p>
-		 <%= t('form.error_message') %>
-	</p>
-
-	<ul>
-		<% for message in @user.errors.full_messages %>
-			<li>
-				<%= message %>
-			</li>
-		<% end %>
-	<ul>
-<% end %>
+<%= render 'form_errors', record: @user %>
 
 <%= form_for @user, url: '/signup' do |f| %>
 	<p>
@@ -37,6 +25,7 @@
 		<%= f.label :password_confirmation, t('labels.user.password_confirmation') %>
 		<%= f.password_field :password_confirmation %>
 	</p>
+
 	<p>
 		<%= f.check_box :tos %>
 		<%= f.label :tos, t('labels.user.tos') %>

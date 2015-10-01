@@ -14,3 +14,6 @@ pt-BR:
             create:
                 notice: 'Tarefa adicionada com sucesso!'
                 alert: 'Erro: Verifique a tarefa'
+
+						update:
+							notice: 'Tarefa atualizada com sucesso'

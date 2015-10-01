@@ -12,4 +12,6 @@ Rails.application.routes.draw do
 
     get '/tasks' => 'tasks#index', as: 'tasks'
     post '/tasks/new' => 'tasks#create', as: 'new_task'
+		get '/tasks/:id/edit' => 'tasks#edit', as: 'edit_task'
+		patch '/tasks/:id/edit' => 'tasks#update'
 end

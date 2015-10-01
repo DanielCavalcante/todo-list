@@ -1,31 +1,36 @@
 pt-BR:
-    form:
-        error_message: 'Verifique o formulário antes de continuar:'
+  form:
+    error_message: 'Verifique o formulário antes de continuar:'
 
-    labels:
-        defaults: &labels_defaults
-            email: Seu e-mail
-            password: Sua senha
+  labels:
+    defaults: &labels_defaults
+      email: Seu e-mail
+      password: Sua senha
 
-        user:
-            name: Seu nome
-            <<: *labels_defaults
-            password_confirmation: Confirme sua senha
-            tos: Concordo com os termos de serviço
+    user:
+      <<: *labels_defaults
+      name: Seu nome
+      password_confirmation: Confirme sua senha
+      tos: Concordo com os termos de serviço
 
-        login:
-            <<: *labels_defaults
+    task:
+      title: Descreva sua tarefa
 
-        task:
-            title: Descreva sua tarefa
+    login:
+      <<: *labels_defaults
 
-    helpers:
-        submit:
-            user:
-                create: Criar minha conta
-                update: Atualizar meu perfil
+  helpers:
+    submit:
+      user:
+        create: Criar minha conta
+        update: Atualizar meu perfil
 
-            task:
-                create: Adicionar
+      task:
+        create: Adicionar
+        update: Atualizar
+        remove: Sim, quero remover!
 
-            login: Acessar minha conta
+      tasks:
+        update: Atualizar
+
+      login: Acessar minha conta
