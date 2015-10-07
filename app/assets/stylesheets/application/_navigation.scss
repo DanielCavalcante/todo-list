@@ -1,0 +1,23 @@
+nav {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+nav input {
+  font-size: 18px;
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+nav li {
+  float: left;
+  list-style: none;
+  margin-left: 15px;
+}
+
+nav a {
+  color: #666;
+}

@@ -1,0 +1,15 @@
+header {
+  position: relative;
+}
+
+header h1,
+header p {
+  display: inline-block;
+  line-height: 60px;
+}
+
+header p {
+  font-family: HelveticaNeue-Light, "Helvetica Neue Light", sans-serif;
+  font-size: 36px;
+  font-weight: 100;
+}

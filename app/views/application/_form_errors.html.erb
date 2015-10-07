@@ -1,13 +1,15 @@
-<% if @record.errors.any? %>
-	<p>
-	<%= t('form.error_message') %>
-	</p>
+<% if record.errors.any? %>
+  <div class="error-messages">
+    <p>
+      <%= t('form.error_message') %>
+    </p>
 
-	<ul>
-		<% for message in @record.errors.full_messages %>
-		<li>
-		<%= message %>
-		</li>
-		<% end %>
-	<ul>
+    <ul>
+      <% for message in record.errors.full_messages %>
+        <li>
+          <%= message %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
 <% end %>

@@ -1,0 +1,10 @@
+pt-BR:
+  titles:
+    tasks:
+      remove: Remover tarefa
+
+  descriptions:
+    tasks:
+      remove_html: |
+        Tem certeza que deseja remover a tarefa <strong>%{title}</strong>?
+        Não será possível desfazer esta ação.

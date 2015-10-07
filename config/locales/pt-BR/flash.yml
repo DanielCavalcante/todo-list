@@ -1,19 +1,25 @@
 pt-BR:
-    flash:
-        signup:
-            create:
-                notice: 'Cadastro realizado com sucesso!'
+  flash:
+    signup:
+      create:
+        notice: 'Cadastro realizado com sucesso!'
 
-        login:
-            create:
-                alert: 'Email/senha inválidos'
-            required:
-                alert: 'Você precisa estar logado para acessar está página.'
+    login:
+      create:
+        alert: 'E-mail/senha inválidos.'
+      required:
+        alert: 'Você precisa estar logado para acessar esta página.'
 
-        tasks:
-            create:
-                notice: 'Tarefa adicionada com sucesso!'
-                alert: 'Erro: Verifique a tarefa'
+    tasks:
+      create:
+        notice: 'Tarefa adicionada com sucesso!'
+        alert: 'Erro: Verifique a tarefa'
 
-						update:
-							notice: 'Tarefa atualizada com sucesso'
+      update:
+        notice: 'Tarefa atualizada com sucesso!'
+
+      destroy:
+        notice: 'Tarefa removida com sucesso!'
+
+      batch_update:
+        notice: 'Tarefas atualizadas com sucesso!'

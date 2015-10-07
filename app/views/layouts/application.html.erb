@@ -7,21 +7,28 @@
 		<%= csrf_meta_tags %>
 		</head>
 	<body>
-		<header>
-			<h1>taskv</h1>
-		</header>
+		<section>
+			<header>
+				<h1><%= link_to 'taskv', root_path%></h1>
+			</header>
 
-		<% if logged_in? %>
-			<%= current_user.name %>
-			<%= button_to t('menu.logout'), logout_path, method: 'delete' %>
-		<% end %>
+			<nav>
+				<%= link_to t('menu.signup'), signup_path %>
+				<%= link_to t('menu.login'), login_path %>
+			</nav>
 
-		<% flash.each do |type, message| %>
-			<p class="message message-<%= type %>">
-				<%= message %>
-			</p>
-		<% end %>
+			<% if logged_in? %>
+				<%= current_user.name %>
+				<%= button_to t('menu.logout'), logout_path, method: 'delete' %>
+			<% end %>
 
-		<%= yield %>
+			<% flash.each do |type, message| %>
+				<p class="message message-<%= type %>">
+					<%= message %>
+				</p>
+			<% end %>
+
+			<%= yield %>
+	</section>
 	</body>
 </html>

@@ -5,8 +5,8 @@ pt-BR:
         name: Nome
         email: E-mail
         password: Senha
-        password_confirmation: Confirmação de senha
-        tos: Termos de serviço
+        password_confirmation: Confirmação de Senha
+        tos: Termos de Serviço
 
-			task:
-				title: Título
+      task:
+        title: Título

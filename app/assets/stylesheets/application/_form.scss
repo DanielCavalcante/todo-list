@@ -1,0 +1,114 @@
+.form-field + .form-field {
+  margin-top: 20px;
+}
+
+.field_with_errors {
+  display: inline;
+}
+
+.field_with_errors label {
+  color: #BF3604;
+  font-weight: bold;
+}
+
+.field_with_errors input {
+  background: rgba(#BF3604, .1);
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+  background-color: #fafafa;
+  border-radius: 3px;
+  border: 1px solid #aaa;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+  display: inline-block;
+  padding: 9px;
+  position: relative;
+  top: 4px;
+}
+
+.firefox input[type=checkbox] {
+  top: 0;
+}
+
+input[type=checkbox]:checked:after {
+  color: #444;
+  content: '\2714';
+  font-size: 14px;
+  left: 3px;
+  position: absolute;
+  top: 0px;
+}
+
+.opera input[type="checkbox"] { top: -4px !important; }
+.firefox input[type=checkbox] { top: 0; }
+.firefox .pending input[type=checkbox] { top: -4px; }
+.firefox .completed input[type=checkbox] { top: 0; }
+
+.completed input[type=checkbox] {
+  top: 7px;
+}
+
+.completed input[type=checkbox]:checked:after {
+  color: #777;
+}
+
+.placeholder .task-form label {
+  display: none;
+}
+
+.submit {
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+}
+
+.checkbox label {
+  display: inline;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  font-size: 17px;
+  padding: 5px 10px;
+  width: 400px;
+}
+
+.button {
+  -webkit-transition: background .2s ease-in;
+  background: #777;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px 20px;
+  text-transform: lowercase;
+}
+
+.button:hover {
+  background: #666;
+}
+
+.task-form .button {
+  background: #83A968;
+  position: absolute;
+  right: 3px;
+  top: 6px;
+}
+
+.task-form .button:hover {
+  background: #688753;
+}
+
+form .submit a {
+  color: #BF3604;
+}
+
+form.button_to {
+  display: inline-block;
+}
