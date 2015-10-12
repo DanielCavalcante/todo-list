@@ -9,26 +9,33 @@
 	<body>
 		<section>
 			<header>
-				<h1><%= link_to 'taskv', root_path%></h1>
+				<%= link_to root_path do %>
+					<%= image_tag 'taskv.svg' %>
+				<% end %>
+
+				<nav>
+					<% if logged_in? %>
+						<span class="user user-small">
+							<%= gravatar_image current_user.email %>
+							<%= current_user.name %>
+						</span>
+						<%= button_to t('menu.logout'), logout_path, method: 'delete' %>
+					<% else %>
+						<%= link_to t('menu.signup'), signup_path %>
+						<%= link_to t('menu.login'), login_path %>
+					<% end %>
+				</nav>
 			</header>
-
-			<nav>
-				<%= link_to t('menu.signup'), signup_path %>
-				<%= link_to t('menu.login'), login_path %>
-			</nav>
-
-			<% if logged_in? %>
-				<%= current_user.name %>
-				<%= button_to t('menu.logout'), logout_path, method: 'delete' %>
-			<% end %>
 
 			<% flash.each do |type, message| %>
 				<p class="message message-<%= type %>">
-					<%= message %>
-				</p>
+					<% message %>
+				<p>
 			<% end %>
 
-			<%= yield %>
+			<div class="content">
+				<%= yield %>
+			</div>
 	</section>
 	</body>
 </html>

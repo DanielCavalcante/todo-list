@@ -1,0 +1,11 @@
+<h1><%= t('titles.tasks.remove') %></h1>
+<p>
+  <%= t('descriptions.tasks.remove_html', title: @task.title) %>
+</p>
+
+<%= form_tag remove_task_path(@task), method: 'delete' do %>
+  <p class="submit">
+    <%= submit_tag t('helpers.submit.task.remove'), class: 'button' %>
+    <%= link_to t('actions.cancel'), tasks_path %>
+  </p>
+<% end %>

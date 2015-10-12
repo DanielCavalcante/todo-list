@@ -1,0 +1,7 @@
+<%= form_for task, url: url, html: {class: 'task-form'} do |f| %>
+	<div>
+		<%= f.label :title, t('labels.task.title') %>
+		<%= f.text_field :title, placeholder: t('labels.task.title') %>
+		<%= f.submit class: 'button' %>
+	</div>
+<% end %>
