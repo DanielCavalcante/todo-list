@@ -39,6 +39,11 @@ class TasksController < ApplicationController
 		@task.destroy!
 		redirect_to tasks_path, notice: t('flash.tasks.destroy.notice')
 	end
+
+def batch_update
+	current_user.tasks.where(id: params[:task_ids]).update_all(['comleted_at = coalesce(completed_at, :now)', now: Time.current])
+end
+
 	def task_params
 		params
 		.require(:task)

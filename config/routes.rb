@@ -16,4 +16,5 @@ Rails.application.routes.draw do
 		patch '/tasks/:id/edit' => 'tasks#update'
 		get '/tasks/:id/remove' => 'tasks#remove', as: 'remove_task'
 		delete '/tasks/:id/remove' => 'tasks#destroy'
+		patch '/tasks/update' => 'tasks#batch_update', as: 'tasks_batch_update'
 end
