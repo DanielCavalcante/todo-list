@@ -3,7 +3,7 @@ class TasksController < ApplicationController
 
 	def index
 		@task = Task.new
-		@tasks = current_user.tasks
+		@tasks = current_user.tasks.sort_by_pending
 	end
 
 	def create
@@ -41,7 +41,8 @@ class TasksController < ApplicationController
 	end
 
 def batch_update
-	current_user.tasks.where(id: params[:task_ids]).update_all(['comleted_at = coalesce(completed_at, :now)', now: Time.current])
+	TaskStatus.update(current_user, params[:task_ids])
+	redirect_to tasks_path, notice: t('flash.tasks.batch_update.notice')
 end
 
 	def task_params
