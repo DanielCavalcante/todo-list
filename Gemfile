@@ -9,7 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bcrypt', '~> 3.1.7'
 gem 'rails-i18n'
-gem 'puma'
+gem 'puma', '~> 2.15', '>= 2.15.3'
 
 group :development, :test do
   gem 'pry-meta'
