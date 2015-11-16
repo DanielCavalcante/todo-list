@@ -95,6 +95,7 @@ GEM
     pry-remote (0.1.8)
       pry (~> 0.9)
       slop (~> 3.0)
+    puma (2.15.3)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -168,6 +169,7 @@ DEPENDENCIES
   minitest-utils
   pg
   pry-meta
+  puma (~> 2.15, >= 2.15.3)
   rails (= 4.2.3)
   rails-i18n
   rails_12factor
